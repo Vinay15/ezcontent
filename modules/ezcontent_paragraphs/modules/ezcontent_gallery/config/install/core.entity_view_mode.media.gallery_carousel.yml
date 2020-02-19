@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.gallery_carousel
+label: 'Gallery Carousel'
+targetEntityType: media
+cache: true

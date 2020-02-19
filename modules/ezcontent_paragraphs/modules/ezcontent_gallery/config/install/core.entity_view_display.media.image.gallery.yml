@@ -25,7 +25,7 @@ content:
       colorbox_image_style: ''
       colorbox_gallery: field_page
       colorbox_gallery_custom: ''
-      colorbox_caption: auto
+      colorbox_caption: entity_title
       colorbox_caption_custom: ''
 hidden:
   created: true

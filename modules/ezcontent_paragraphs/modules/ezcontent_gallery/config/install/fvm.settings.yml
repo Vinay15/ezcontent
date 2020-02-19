@@ -1,0 +1,47 @@
+hide_layout_builder_field: 0
+media__image: 0
+media__image__view_modes:
+  card_list: 0
+  gallery: 0
+  media_library: 0
+  slick: 0
+  thumbnail: 0
+  token: 0
+media__video: 0
+media__video__view_modes:
+  gallery: 0
+node__article: 0
+node__article__view_modes:
+  teaser: 0
+node__author: 0
+node__author__view_modes:
+  teaser: 0
+node__landing_page: 0
+node__landing_page__view_modes:
+  teaser: 0
+node__smart_article: 0
+node__smart_article__view_modes:
+  teaser: 0
+paragraphs_library_item__paragraphs_library_item: 0
+paragraphs_library_item__paragraphs_library_item__view_modes:
+  summary: 0
+paragraph__card: 0
+paragraph__card__view_modes:
+  card_list: 0
+  gallery: 0
+  hero_media: 0
+  preview: 0
+paragraph__embed: 0
+paragraph__embed__view_modes:
+  preview: 0
+paragraph__gallery: 1
+paragraph__gallery__view_modes:
+  gallery: gallery
+  gallery_carousel: gallery_carousel
+  preview: 0
+paragraph__gallery_carousel: 0
+paragraph__gallery_carousel__view_modes:
+  preview: 0
+paragraph__hero_media: 0
+paragraph__hero_media__view_modes:
+  preview: 0

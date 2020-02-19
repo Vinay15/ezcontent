@@ -7,3 +7,4 @@ dependencies:
   - ezcontent_assets
   - libraries
   - colorbox
+  - fvm
