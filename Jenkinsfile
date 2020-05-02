@@ -6,7 +6,6 @@ pipeline {
         sh '''rm -rf ezcontent-install;
 rm ~/.composer/cache/repo/https---repo.packagist.org/provider-srijanone\\$ezcontent.json;
 rm ~/.composer/cache/repo/https---repo.packagist.org/provider-srijanone\\$ezcontent-project.json;
-echo "Old install Removed. Composer cache for project cleared. Creating new project.";
 COMPOSER_MEMORY_LIMIT=-1 composer create-project srijanone/ezcontent-project:8.x-dev ezcontent-install --no-interaction;
 cd ezcontent-install;
 echo "Creating required files.";
