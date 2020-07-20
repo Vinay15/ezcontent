@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.article.field_subhead
     - field.field.node.article.field_summary
     - field.field.node.article.field_tags
+    - field.field.node.article.field_test
     - field.field.node.article.field_thumbnail
     - field.field.node.article.field_yoast_seo
     - node.type.article
@@ -51,5 +52,6 @@ hidden:
   field_social_sharing: true
   field_subhead: true
   field_tags: true
+  field_test: true
   field_yoast_seo: true
   links: true

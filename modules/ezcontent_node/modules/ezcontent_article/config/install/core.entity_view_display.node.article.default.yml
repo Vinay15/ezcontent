@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.article.field_subhead
     - field.field.node.article.field_summary
     - field.field.node.article.field_tags
+    - field.field.node.article.field_test
     - field.field.node.article.field_thumbnail
     - field.field.node.article.field_yoast_seo
     - node.type.article
@@ -59,6 +60,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: social_media_default
+    region: content
+  field_test:
+    weight: 6
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
   links:
     weight: 3

@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.article.field_subhead
     - field.field.node.article.field_summary
     - field.field.node.article.field_tags
+    - field.field.node.article.field_test
     - field.field.node.article.field_thumbnail
     - field.field.node.article.field_yoast_seo
     - node.type.article
@@ -188,6 +189,14 @@ content:
       selection_handler: default
     third_party_settings: {  }
     type: autocomplete_deluxe
+    region: content
+  field_test:
+    weight: 125
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   field_thumbnail:
     weight: 122

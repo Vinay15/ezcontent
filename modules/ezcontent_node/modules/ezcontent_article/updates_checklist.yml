@@ -1,0 +1,8 @@
+8.x-1.0:
+    '#title': 'Update to version 8.x-1.0'
+    '#description': '<h3>These are the new features for this release:</h3>'
+    ezcontent_article_update_8001:
+        '#title': 'Added a new field_test to article content type.'
+        '#description': '<p>This configuration will add a new field_test to article content type.</p>'
+        '#description_successful': '<p>Added new field_test to article content type successfully.</p>'
+        '#description_failed': '<p><strong>Failed to add field_test to article content type.</strong><p>'

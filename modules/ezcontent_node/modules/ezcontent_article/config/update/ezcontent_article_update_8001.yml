@@ -1,0 +1,35 @@
+core.entity_form_display.node.article.default:
+  expected_config: {  }
+  update_actions:
+    add:
+      content:
+        field_test:
+          region: content
+          settings:
+            placeholder: ''
+            size: 60
+          third_party_settings: {  }
+          type: string_textfield
+          weight: 125
+core.entity_view_display.node.article.default:
+  expected_config: {  }
+  update_actions:
+    add:
+      content:
+        field_test:
+          label: above
+          region: content
+          settings:
+            link_to_entity: false
+          third_party_settings: {  }
+          type: string
+          weight: 6
+core.entity_view_display.node.article.teaser:
+  expected_config:
+    third_party_settings: {  }
+  update_actions:
+    delete:
+      third_party_settings: {  }
+    add:
+      hidden:
+        field_test: true
