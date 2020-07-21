@@ -6,3 +6,15 @@
         '#description': '<p>This configuration update will update site configuration to newly provided configuration</p>'
         '#description_successful': '<p>Configuration is successfully updated.</p>'
         '#description_failed': '<p><strong>Update of configuration has failed.</strong><p>'
+
+    ezcontent_article_update_8002:
+        '#title': 'Hide social links from article default view mode.'
+        '#description': '<p>This configuration update will update site configuration to newly provided configuration</p>'
+        '#description_successful': '<p>Configuration is successfully updated.</p>'
+        '#description_failed': '<p><strong>Update of configuration has failed.</strong><p>'
+
+    ezcontent_article_update_8003:
+        '#title': 'Hide meta tags field from article content type.'
+        '#description': '<p>This configuration update will update site configuration to newly provided configuration</p>'
+        '#description_successful': '<p>Configuration is successfully updated.</p>'
+        '#description_failed': '<p><strong>Update of configuration has failed.</strong><p>'

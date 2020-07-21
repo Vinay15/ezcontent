@@ -13,3 +13,33 @@ function ezcontent_article_update_8001() {
   // Output logged messages to related channel of update execution.
   return $updateHelper->logger()->output();
 }
+
+
+/**
+ * Hide social links from article default view mode.
+ */
+function ezcontent_article_update_8002() {
+  /** @var \Drupal\update_helper\Updater $updateHelper */
+  $updateHelper = \Drupal::service('update_helper.updater');
+
+  // Execute configuration update definitions with logging of success.
+  $updateHelper->executeUpdate('ezcontent_article', 'ezcontent_article_update_8002');
+
+  // Output logged messages to related channel of update execution.
+  return $updateHelper->logger()->output();
+}
+
+
+/**
+ * Hide meta tags field from article content type.
+ */
+function ezcontent_article_update_8003() {
+  /** @var \Drupal\update_helper\Updater $updateHelper */
+  $updateHelper = \Drupal::service('update_helper.updater');
+
+  // Execute configuration update definitions with logging of success.
+  $updateHelper->executeUpdate('ezcontent_article', 'ezcontent_article_update_8003');
+
+  // Output logged messages to related channel of update execution.
+  return $updateHelper->logger()->output();
+}

@@ -16,7 +16,6 @@ dependencies:
     - node.type.article
   module:
     - user
-third_party_settings: {  }
 id: node.article.teaser
 targetEntityType: node
 bundle: article

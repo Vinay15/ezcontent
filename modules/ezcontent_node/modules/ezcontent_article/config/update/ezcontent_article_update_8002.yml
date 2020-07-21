@@ -1,0 +1,41 @@
+core.entity_view_display.node.article.default:
+  expected_config:
+    content:
+      field_author:
+        weight: 5
+      field_content:
+        weight: 2
+      field_meta_tags:
+        weight: 4
+      field_social_sharing:
+        label: hidden
+        region: content
+        settings: {  }
+        third_party_settings: {  }
+        type: social_media_default
+        weight: 1
+      links:
+        weight: 3
+  update_actions:
+    delete:
+      content:
+        field_social_sharing:
+          label: hidden
+          region: content
+          settings: {  }
+          third_party_settings: {  }
+          type: social_media_default
+          weight: 1
+    add:
+      hidden:
+        field_social_sharing: true
+    change:
+      content:
+        field_author:
+          weight: 4
+        field_content:
+          weight: 1
+        field_meta_tags:
+          weight: 3
+        links:
+          weight: 2
