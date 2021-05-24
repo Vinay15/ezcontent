@@ -396,9 +396,6 @@ function generate_tags_form_submit(array $form, FormStateInterface $form_state) 
   return $response;
 }
 
-/**
- * Implements hook_theme().
- */
 function ezcontent_smart_article_theme($existing, $type, $theme, $path) {
   return [
     'smarttag_template' => [
