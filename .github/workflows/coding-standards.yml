@@ -12,3 +12,15 @@ jobs:
       
       - name: Check coding standards
         run: ~/.composer/vendor/bin/phpcs --standard="Drupal,DrupalPractice" --extensions="module,inc,install,test,profile,theme,css,info,txt,md,yml" .
+
+  phpstan-report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install phpstan
+        run: composer global require --dev phpstan/phpstan
+
+      - name: Clone the code
+        uses: actions/checkout@v2
+
+      - name: Analyse codebase
+        run: ~/.composer/vendor/bin/phpstan analyse ./modules/ezcontent_node/modules/ezcontent_smart_article
