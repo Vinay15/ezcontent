@@ -28,10 +28,23 @@ jobs:
   local-php-security-checker:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/cache@v2
+      - name: Clone the code
+        uses: actions/checkout@v2
+
+      - name: Set up PHP 7.3
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 7.3
+
+      - name: Composer install
+        run: composer install
+
+      - name: Add Cache
+        uses: actions/cache@v2
         id: cache-db
         with:
             path: ~/.symfony/cache
             key: db
-      - uses: symfonycorp/security-checker-action@v2
+
+      - name: Scan composer.lock
+        uses: symfonycorp/security-checker-action@v2
