@@ -16,14 +16,19 @@ jobs:
   phpstan-report:
     runs-on: ubuntu-latest
     steps:
-      - name: Install phpstan
-        run: composer global require --dev phpstan/phpstan
-
       - name: Clone the code
         uses: actions/checkout@v2
 
+      - name: Set up PHP 7.3
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 7.3
+
+      - name: Composer install
+        run: composer install
+
       - name: Analyse codebase
-        run: ~/.composer/vendor/bin/phpstan analyse ./modules/ezcontent_node/modules/ezcontent_smart_article
+        run: ./vendor/bin/phpstan analyse ./modules/ezcontent_node/modules/ezcontent_smart_article
 
   local-php-security-checker:
     runs-on: ubuntu-latest
